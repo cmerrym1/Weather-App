@@ -37,7 +37,13 @@ var getLocation = function(city) {
     });
 };
 
-var displayWeather = function(searchTerm) {
+var displayWeather = function(city, searchTerm) {
+  if (city.length === 0) {
+    weatherContainerEl.textContent = "No cities found.";
+    return;
+  }
+
+  weatherSearchTerm.textContent = searchTerm;
   console.log("chickaboom!")
 };
 
