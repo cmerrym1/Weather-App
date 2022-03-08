@@ -24,3 +24,17 @@ h1 {
     border: 1px solid black;
 }
 
+.btn {
+    background-color: blue;
+    margin: 5px 0px;
+    color: white;
+    text-align: center;
+}
+
+.search {
+    border-bottom: 2px solid grey;
+}
+
+.row {
+    margin: 10px;
+}
