@@ -22,13 +22,14 @@
             <div class="col-sm-3">
                 <h2>Search for a City:</h2>
                 <form id ="user-form" class="search">
-                    <input city="cityname" id="cityname" type="text" autofocus="true" class="form-input" />
+                    <input city="cityname" id="cityname" type="text" autofocus="true" class="form-input" placeholder="Toledo" />
                     <button type="submit" class="btn">Search</button>
                 </form>
             </div>
     
             <div class="col-sm-9 border">
-                <h2>City Name</h2>
+                <h2>City Name: <span id="weather-search-term"></span></h2>
+                <div id="weather-container" class="list-group"></div>
             </div>
         </div>
 
@@ -58,6 +59,6 @@
 
 
 
-    <script src="./assets/js/homepage.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
