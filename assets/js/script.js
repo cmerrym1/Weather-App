@@ -37,14 +37,9 @@ var getLocation = function(city) {
     });
 };
 
-var displayWeather = function(city, searchTerm) {
-  if (city.length === 0) {
-    weatherContainerEl.textContent = "No cities found.";
-    return;
-  }
-
+var displayWeather = function(data, searchTerm) {
   weatherSearchTerm.textContent = searchTerm;
-  console.log("chickaboom!")
-};
+}; 
+
 
 userFormEl.addEventListener("submit", formSubmitHandler);
