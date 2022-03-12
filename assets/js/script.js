@@ -3,6 +3,7 @@ var userFormEl = document.querySelector("#user-form");
 var nameInputEl = document.querySelector("#cityname");
 var weatherContainerEl = document.querySelector("#weather-container");
 var weatherSearchTerm = document.querySelector("#weather-search-term");
+var weatherHumidity = document.querySelector("#weather-humidity")
 
 var formSubmitHandler = function(event) {
   event.preventDefault();
@@ -37,9 +38,16 @@ var getLocation = function(city) {
     });
 };
 
-var displayWeather = function(data, searchTerm) {
+var displayWeather = function(data, searchTerm, humidity) {
   weatherSearchTerm.textContent = searchTerm;
+  weatherHumidity.textContent = humidity;
+
+  console.log("City: " + data.name);
+  console.log("Humidity: " + data.main.humidity);
+  console.log("Wind Speed: " + data.wind.speed);
+  console.log("data",data.weather.icon);
 }; 
+
 
 
 userFormEl.addEventListener("submit", formSubmitHandler);
